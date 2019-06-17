@@ -4,6 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Reads the json file from assets folder to setup form with bootstrap gouping and positioning of form controls.
 Any component can be used as a form control. easy plug and play form.
+
+Download the code and run npm install command 
+ng serve to run at http://localhost:4200
+
 Feel free to contact me for further help @ saqibumar@gmail.com
 
 ## Development server
