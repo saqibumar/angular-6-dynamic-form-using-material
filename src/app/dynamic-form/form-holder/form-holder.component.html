@@ -1,0 +1,16 @@
+<div class="form">
+  <div style="text-align:center">
+    <h1>
+      [Dynamic Form Title here...]
+    </h1>
+  </div>
+  <dynamic-form [fields]="regConfig" (submit)="submit($event)" 
+      *ngIf="regConfig">
+  </dynamic-form>
+  <div class="margin-top" *ngIf="show">
+    {{ form.value | json }}
+  </div>
+  <div class="margin-top" *ngIf="payload">
+    {{ payload | json }}
+  </div>
+</div>

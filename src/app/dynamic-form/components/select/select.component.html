@@ -1,0 +1,34 @@
+<mat-form-field class="demo-full-width margin-top" [formGroup]="group" *ngIf="options">
+  <mat-select [placeholder]="field.ControlDinamico.EtiquetaPresentacion" 
+  [compareWith]="compState"
+  [(value)]="selected[0].IdLlaveNegoio" [formControlName]="field.ControlDinamico.NombreControl">
+  <mat-option *ngFor="let item of options" 
+  [value]="item.Id">
+  {{item.Descripcion}}
+</mat-option>
+</mat-select>
+</mat-form-field>
+
+<!-- <div [formGroup]="group" *ngIf="options"> -->
+<!-- <mat-form-field class="demo-full-width margin-top" [formGroup]="group">
+    <mat-select [placeholder]="field.ControlDinamico.EtiquetaPresentacion" 
+    [(ngModel)]="selectedVal[0].IdLlaveNegoio"
+      [formControlName]="field.ControlDinamico.NombreControl" 
+      [(value)]="selectedVal[0].IdLlaveNegoio">
+      <mat-option *ngFor="let item of field.ControlDinamico.Repertorio" 
+        [value]="item.LlaveNegocio.IdLlaveNegoio" [id]="item.Id">
+        {{item.Descripcion}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> -->
+
+  <!-- <select id="{{field.ControlDinamico.IDUnicoAtributo}}" name="{{field.ControlDinamico.NombreControl}}" 
+        [(value)]="selectedVal[0].IdLlaveNegoio" 
+        [formControlName]="field.ControlDinamico.NombreControl">
+        <option *ngFor="let opt of field.ControlDinamico.Repertorio" 
+          [value]="opt.LlaveNegocio.IdLlaveNegoio"
+          [id]="opt.Id">
+           {{opt.Descripcion}}
+        </option>
+      </select> -->
+<!-- </div> -->

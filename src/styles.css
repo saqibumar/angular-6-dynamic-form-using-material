@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+*{
+    font-family: 'Arsenal', sans-serif;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  
+  html, body { 
+    height: 100%; 
+  }
+  
+  body { 
+    margin: 50px; 
+    
+  }
+  mat-form-field{
+    width:100%;
+  }

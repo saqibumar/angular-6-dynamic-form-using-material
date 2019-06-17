@@ -1,0 +1,8 @@
+<mat-form-field class="demo-full-width" [formGroup]="group">
+  <input matInput [formControlName]="field.ControlDinamico.NombreControl" 
+    [placeholder]="field.ControlDinamico.EtiquetaPresentacion" 
+    [type]="field.ControlDinamico.id_AtributoFlujoTipo">
+  <ng-container *ngFor="let validation of field.ControlDinamico.validations;" ngProjectAs="mat-error">
+  <mat-error *ngIf="group.get(field.ControlDinamico.NombreControl).hasError(validation.name)">{{validation.message}}</mat-error>
+  </ng-container>
+  </mat-form-field>

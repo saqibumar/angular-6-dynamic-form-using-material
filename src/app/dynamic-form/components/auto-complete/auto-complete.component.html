@@ -1,0 +1,19 @@
+<mat-form-field style="width:100%;display:block" floatLabel="never" [formGroup]="group">
+    
+    <input matInput [formControlName]="field.ControlDinamico.NombreControl" 
+      type="text" matInput placeholder="Search..." required (focus)="selectColonia($event)"
+      
+      [matAutocomplete]="auto" (keyup)="loadGrid($event, $event.target.value, urlApi)" >
+      
+      <mat-autocomplete #auto="matAutocomplete" autoActiveFirstOption
+      (optionSelected)='getSelectedRecord($event.option.value)'>
+        
+          <mat-option *ngFor="let option of data" [value]="option.descripcion">
+            {{option.descripcion}}
+          </mat-option>
+        
+    </mat-autocomplete>
+  </mat-form-field>
+
+  <!-- <div>Time: {{ time | async }}</div> -->
+  <!-- {{option | json}} -->
