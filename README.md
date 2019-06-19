@@ -8,7 +8,12 @@ Any component can be used as a form control. easy plug and play form.
 Download the code and run npm install command 
 ng serve to run at http://localhost:4200
 
-Feel free to contact me for further help @ saqibumar@gmail.com
+Feel free to contact me for further help @ saqib@programmingalternatives.com
+
+http://logicloud.co.uk 
+
+http://programmingalternatives.com
+
 
 ## Development server
 
