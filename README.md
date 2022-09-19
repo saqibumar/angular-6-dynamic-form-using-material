@@ -10,8 +10,6 @@ ng serve to run at http://localhost:4200
 
 Feel free to contact me for further help @ saqib@programmingalternatives.com
 
-http://logicloud.co.uk 
-
 http://programmingalternatives.com
 
 
